@@ -35,7 +35,6 @@ public class InstructionsHandler {
             return new Lawn(width, height, mowers);
 
         } catch (IOException e) {
-            // TODO ne pas printer et utiliser une exception custom
             System.err.println("Erreur lors de la lecture du fichier : " + e.getMessage());
             throw new RuntimeException(e);
         } catch (NumberFormatException | ArrayIndexOutOfBoundsException | NullPointerException e) {

@@ -22,7 +22,6 @@ public class InstructionsHandlerTest {
         instructionsHandler.executeAllInstructions(lawn);
 
         assertThat(getExpected()).usingRecursiveComparison().isEqualTo(lawn);
-
     }
 
     @ParameterizedTest

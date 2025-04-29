@@ -5,9 +5,8 @@ public class Main {
     public static void main(String[] args) {
         InstructionsHandler instructionsHandler = new InstructionsHandler();
 
-        Lawn lawn = instructionsHandler.parseInstructions("src\\main\\resources\\input.txt");
+        Lawn lawn = instructionsHandler.parseInstructions(args[0]);
         instructionsHandler.executeAllInstructions(lawn);
-        // TODO think about better main, par exemple fichier input en argument
 
         lawn.printAllPositions();
     }
