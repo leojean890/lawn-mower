@@ -9,9 +9,8 @@ public class Main {
 
         Lawn lawn = instructionsHandler.parseInstructions("src\\main\\resources\\input.txt");
         instructionsHandler.executeAllInstructions(lawn);
-        // TODO think about better main
+        // TODO think about better main, par exemple fichier input en argument
 
-        lawn.getLawnMowers().forEach(mower ->
-                System.out.println("Tondeuse : " + mower.getPosition() + " " + mower.getDirection()));
+        lawn.printAllPositions();
     }
 }

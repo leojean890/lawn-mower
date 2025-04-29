@@ -22,6 +22,11 @@ public class Lawn {
         lawnMowers.forEach(mower -> mower.executeInstructions(this));
     }
 
+    public void printAllPositions(){
+        lawnMowers.forEach(mower
+                -> System.out.println("Tondeuse : " + mower.getPosition() + " " + mower.getDirection()));
+    }
+
     // TODO remove this
     public List<LawnMower> getLawnMowers() { return lawnMowers; }
 }
