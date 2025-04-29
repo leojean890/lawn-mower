@@ -14,16 +14,22 @@ public class Lawn {
     }
 
     public boolean isInside(Position position) {
-        return position.x() >= 0 && position.x() <= width &&
-                position.y() >= 0 && position.y() <= height;
+        return position.x() >= 0 && position.x() <= width
+                && position.y() >= 0 && position.y() <= height;
     }
 
     public void executeAllInstructions(){
         lawnMowers.forEach(mower -> mower.executeInstructions(this));
     }
 
-    public void printAllPositions(){
-        lawnMowers.forEach(mower
-                -> System.out.println("Tondeuse : " + mower.getPosition() + " " + mower.getDirection()));
+    public String returnAllPositions(){
+        StringBuilder output = new StringBuilder();
+
+        lawnMowers.forEach(mower -> {
+                mower.returnPositionAndDirection(output);
+                output.append(" ");
+        });
+
+        return output.toString().trim();
     }
 }

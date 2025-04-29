@@ -12,8 +12,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class InstructionsHandler {
-    public void executeAllInstructions(Lawn lawn){
+    public String executeAllInstructions(String inputFile){
+        Lawn lawn = parseInstructions(inputFile);
         lawn.executeAllInstructions();
+        return lawn.returnAllPositions();
     }
 
     public Lawn parseInstructions(String filePath) {

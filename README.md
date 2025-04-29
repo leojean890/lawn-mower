@@ -1,6 +1,6 @@
 Ce projet permet d'exécuter les instructions des tondeuses dans l'ordre fourni en input.
 
-J'ai créé une méthode Main.main qui prend en entrée un fichier d'instructions et affiche le résultat sur la sortie standard.
+J'ai créé une méthode Main.main qui prend en entrée un chemin vers un fichier d'instructions et affiche le résultat sur la sortie standard.
 
 Ce projet contient également 4 tests automatisés :
 - test nominal
@@ -20,12 +20,11 @@ mvn clean install
 
 traces d'exécution :
 
-[INFO]
 [INFO] -------------------------------------------------------
 [INFO]  T E S T S
 [INFO] -------------------------------------------------------
 [INFO] Running com.solent.service.InstructionsHandlerTest
-[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.836 s - in com.solent.service.InstructionsHandlerTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.73 s - in com.solent.service.InstructionsHandlerTest
 [INFO]
 [INFO] Results:
 [INFO]
@@ -41,6 +40,6 @@ traces d'exécution :
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  13.258 s
-[INFO] Finished at: 2025-04-29T17:14:04+02:00
+[INFO] Total time:  15.603 s
+[INFO] Finished at: 2025-04-29T18:03:37+02:00
 [INFO] ------------------------------------------------------------------------

@@ -37,7 +37,11 @@ public class LawnMower {
         }
     }
 
-    public Position getPosition() { return position; }
-
-    public Direction getDirection() { return direction; }
+    public void returnPositionAndDirection(StringBuilder output) {
+        output.append(position.x())
+            .append(" ")
+            .append(position.y())
+            .append(" ")
+            .append(direction);
+    }
 }
