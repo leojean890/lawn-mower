@@ -14,8 +14,7 @@ import java.util.List;
 public class InstructionsHandler {
     public String executeAllInstructions(String inputFile){
         Lawn lawn = parseInstructions(inputFile);
-        lawn.executeAllInstructions();
-        return lawn.returnAllPositions();
+        return lawn.executeAllInstructions();
     }
 
     public Lawn parseInstructions(String filePath) {

@@ -19,7 +19,7 @@ public class LawnMower {
         this.direction = direction.rotateRight();
     }
 
-    public void executeInstructions(Lawn lawn) {
+    public void executeInstructions(Lawn lawn, StringBuilder output) {
         for (char instruction : instructions.toCharArray()) {
             switch (instruction) {
                 case 'G' -> rotateLeft();
@@ -28,6 +28,7 @@ public class LawnMower {
                 default -> throw new IllegalArgumentException("Commande invalide : " + instruction);
             }
         }
+        appendPositionAndDirection(output);
     }
 
     public void moveForward(Lawn lawn) {
@@ -37,11 +38,12 @@ public class LawnMower {
         }
     }
 
-    public void returnPositionAndDirection(StringBuilder output) {
+    public void appendPositionAndDirection(StringBuilder output) {
         output.append(position.x())
             .append(" ")
             .append(position.y())
             .append(" ")
-            .append(direction);
+            .append(direction)
+            .append(" ");
     }
 }

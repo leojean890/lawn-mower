@@ -3,33 +3,24 @@ package com.solent.model;
 import java.util.List;
 
 public class Lawn {
-    private final int width;
-    private final int height;
+    private final int largestAvailableXCoordinate;
+    private final int largestAvailableYCoordinate;
     private final List<LawnMower> lawnMowers;
 
-    public Lawn(int width, int height, List<LawnMower> lawnMowers) {
-        this.width = width;
-        this.height = height;
+    public Lawn(int largestAvailableXCoordinate, int largestAvailableYCoordinate, List<LawnMower> lawnMowers) {
+        this.largestAvailableXCoordinate = largestAvailableXCoordinate;
+        this.largestAvailableYCoordinate = largestAvailableYCoordinate;
         this.lawnMowers = lawnMowers;
     }
 
     public boolean isInside(Position position) {
-        return position.x() >= 0 && position.x() <= width
-                && position.y() >= 0 && position.y() <= height;
+        return position.x() >= 0 && position.x() <= largestAvailableXCoordinate
+                && position.y() >= 0 && position.y() <= largestAvailableYCoordinate;
     }
 
-    public void executeAllInstructions(){
-        lawnMowers.forEach(mower -> mower.executeInstructions(this));
-    }
-
-    public String returnAllPositions(){
+    public String executeAllInstructions(){
         StringBuilder output = new StringBuilder();
-
-        lawnMowers.forEach(mower -> {
-                mower.returnPositionAndDirection(output);
-                output.append(" ");
-        });
-
+        lawnMowers.forEach(mower -> mower.executeInstructions(this, output));
         return output.toString().trim();
     }
 }

@@ -2,8 +2,9 @@ Ce projet permet d'exécuter les instructions des tondeuses dans l'ordre fourni 
 
 J'ai créé une méthode Main.main qui prend en entrée un chemin vers un fichier d'instructions et affiche le résultat sur la sortie standard.
 
-Ce projet contient également 4 tests automatisés :
+Ce projet contient également 5 tests automatisés :
 - test nominal
+- test dont le but est de vérifier que les commandes qui font sortir la tondeuse de la map sont ignorées
 - test paramétré contenant 3 cas d'erreur liés au format du fichier d'entrée
   
 Axes d'amélioration éventuels : 
@@ -13,7 +14,6 @@ Axes d'amélioration éventuels :
 - ajouter d'autres tests automatisés de cas d'erreur, par exemple le cas où le fichier fourni en entrée n'est pas trouvé
 - petite réserve : on reçoit les instructions en même temps que l'objet, je les ai construit ensemble 
 mais ça aurait été mieux de les décorréler histoire de pouvoir recevoir plusieurs chaines d'instructions à des moments variés pour une même tondeuse (sujet différent)
-
 
 Pour compiler le projet et exécuter les tests automatisés, utiliser la commande suivante :
 
@@ -25,11 +25,11 @@ traces d'exécution :
 [INFO]  T E S T S
 [INFO] -------------------------------------------------------
 [INFO] Running com.solent.service.InstructionsHandlerTest
-[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.73 s - in com.solent.service.InstructionsHandlerTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.452 s - in com.solent.service.InstructionsHandlerTest
 [INFO]
 [INFO] Results:
 [INFO]
-[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0
 [INFO]
 [INFO]
 [INFO] --- jar:3.3.0:jar (default-jar) @ lawn-mower ---
@@ -41,6 +41,6 @@ traces d'exécution :
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  15.603 s
-[INFO] Finished at: 2025-04-29T18:03:37+02:00
+[INFO] Total time:  8.201 s
+[INFO] Finished at: 2025-04-29T20:45:45+02:00
 [INFO] ------------------------------------------------------------------------
