@@ -4,7 +4,7 @@ J'ai créé une méthode Main.main qui prend en entrée un chemin vers un fichie
 
 Ce projet contient également 4 tests automatisés :
 - test nominal
-- test paramétré contenant pas mal de cas d'erreur liés au format du fichier d'entrée
+- test paramétré contenant 3 cas d'erreur liés au format du fichier d'entrée
   
 Axes d'amélioration éventuels : 
 
