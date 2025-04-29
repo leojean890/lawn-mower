@@ -11,7 +11,8 @@ Axes d'amélioration éventuels :
 - utiliser des exceptions custom
 - utiliser un logger
 - ajouter d'autres tests automatisés de cas d'erreur, par exemple le cas où le fichier fourni en entrée n'est pas trouvé
-
+- petite réserve : on reçoit les instructions en même temps que l'objet, je les ai construit ensemble 
+mais ça aurait été mieux de les décorréler histoire de pouvoir recevoir plusieurs chaines d'instructions à des moments variés pour une même tondeuse (sujet différent)
 
 
 Pour compiler le projet et exécuter les tests automatisés, utiliser la commande suivante :
