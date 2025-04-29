@@ -1,9 +1,9 @@
-package main.com.solent.service;
+package com.solent.service;
 
-import main.com.solent.model.Direction;
-import main.com.solent.model.Lawn;
-import main.com.solent.model.LawnMower;
-import main.com.solent.model.Position;
+import com.solent.model.Direction;
+import com.solent.model.Lawn;
+import com.solent.model.LawnMower;
+import com.solent.model.Position;
 
 import java.io.BufferedReader;
 import java.io.FileReader;

@@ -1,4 +1,4 @@
-package main.com.solent.model;
+package com.solent.model;
 
 public record Position(int x, int y) {
     public Position move(Direction direction) {

@@ -1,4 +1,4 @@
-package main.com.solent.model;
+package com.solent.model;
 
 public enum Direction {
     N, E, S, W;

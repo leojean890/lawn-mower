@@ -1,4 +1,4 @@
-package main.com.solent.model;
+package com.solent.model;
 
 import java.util.List;
 
@@ -26,7 +26,4 @@ public class Lawn {
         lawnMowers.forEach(mower
                 -> System.out.println("Tondeuse : " + mower.getPosition() + " " + mower.getDirection()));
     }
-
-    // TODO remove this
-    public List<LawnMower> getLawnMowers() { return lawnMowers; }
 }

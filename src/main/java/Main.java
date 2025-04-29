@@ -1,7 +1,5 @@
-package main;
-
-import main.com.solent.model.Lawn;
-import main.com.solent.service.InstructionsHandler;
+import com.solent.model.Lawn;
+import com.solent.service.InstructionsHandler;
 
 public class Main {
     public static void main(String[] args) {

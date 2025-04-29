@@ -1,4 +1,4 @@
-package main.com.solent.model;
+package com.solent.model;
 
 public class LawnMower {
     private Position position;
@@ -38,5 +38,6 @@ public class LawnMower {
     }
 
     public Position getPosition() { return position; }
+
     public Direction getDirection() { return direction; }
 }
