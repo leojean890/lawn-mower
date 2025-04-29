@@ -18,6 +18,8 @@ Pour compiler le projet et exécuter les tests automatisés, utiliser la command
 
 mvn clean install
 
+traces d'exécution :
+
 [INFO]
 [INFO] -------------------------------------------------------
 [INFO]  T E S T S
