@@ -10,6 +10,7 @@ Ce projet contient également 5 tests automatisés :
 Axes d'amélioration éventuels : 
 
 - utiliser des exceptions custom
+- utiliser des EnumMap ou des HashMap au lieu des switch pour déterminer selon l'instruction reçue, l'action à réaliser. 
 - utiliser un logger
 - ajouter d'autres tests automatisés de cas d'erreur, par exemple le cas où le fichier fourni en entrée n'est pas trouvé
 - petite réserve : on reçoit les instructions en même temps que l'objet, je les ai construit ensemble 
